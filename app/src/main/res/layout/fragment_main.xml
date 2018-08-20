@@ -3,13 +3,21 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
     <!--Content-->
     <LinearLayout
+        android:background="@drawable/bg_clear"
         android:layout_margin="@dimen/m1"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
         <!--User-->
         <EditText
+            android:textSize="@dimen/h3"
+            android:background="@drawable/textfield_user"
             android:hint="User :"
             android:inputType="text"
             android:layout_width="match_parent"
@@ -17,12 +25,15 @@
 
         <!--Password-->
         <EditText
+            android:textSize="@dimen/h3"
+            android:background="@drawable/textfield_password"
             android:hint="Password : "
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <!--Login-->
         <Button
+            android:background="@drawable/bg_button"
             android:text="Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

@@ -15,12 +15,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
+            android:layout_margin="@dimen/m1"
+            android:background="@drawable/bg_clear"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <!--Avarta-->
             <ImageView
+                android:src="@drawable/avata"
                 android:layout_margin="@dimen/m1"
                 android:scaleType="centerInside"
                 android:layout_width="match_parent"
@@ -28,6 +31,8 @@
 
             <!--Name-->
             <EditText
+                android:background="@drawable/textfield_name"
+                android:textSize="@dimen/h3"
                 android:hint="Name : "
                 android:inputType="text"
                 android:layout_width="match_parent"
@@ -35,6 +40,8 @@
 
             <!--User-->
             <EditText
+                android:background="@drawable/textfield_user"
+                android:textSize="@dimen/h3"
                 android:hint="User : "
                 android:inputType="text"
                 android:layout_width="match_parent"
@@ -42,6 +49,8 @@
 
             <!--Password-->
             <EditText
+                android:background="@drawable/textfield_password"
+                android:textSize="@dimen/h3"
                 android:hint="Password : "
                 android:inputType="text"
                 android:layout_width="match_parent"
