@@ -24,6 +24,7 @@
 
             <!--Avarta-->
             <ImageView
+                android:id="@+id/imvAvata"
                 android:src="@drawable/avata"
                 android:layout_margin="@dimen/m1"
                 android:scaleType="centerInside"
