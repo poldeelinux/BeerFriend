@@ -33,6 +33,7 @@
 
             <!--Name-->
             <EditText
+                android:id="@+id/edtName"
                 android:background="@drawable/textfield_name"
                 android:textSize="@dimen/h3"
                 android:hint="Name : "
@@ -42,6 +43,7 @@
 
             <!--User-->
             <EditText
+                android:id="@+id/edtUser"
                 android:background="@drawable/textfield_user"
                 android:textSize="@dimen/h3"
                 android:hint="User : "
@@ -51,6 +53,7 @@
 
             <!--Password-->
             <EditText
+                android:id="@+id/edtPassword"
                 android:background="@drawable/textfield_password"
                 android:textSize="@dimen/h3"
                 android:hint="Password : "
