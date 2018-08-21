@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceActivity">
+
+    <!--Main Content-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarService"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <!--Content Fragment RecyclerView-->
+        <FrameLayout
+            android:layout_above="@+id/contentFragmentServiceButton"
+            android:layout_below="@+id/toolbarService"
+            android:id="@+id/contentFragmentServiceTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <!--Content Fragment Post Message-->
+        <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/contentFragmentServiceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <!--Drawer Menu-->
+
+
+</android.support.v4.widget.DrawerLayout>
