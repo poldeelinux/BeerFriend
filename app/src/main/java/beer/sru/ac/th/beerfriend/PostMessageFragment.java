@@ -9,6 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class PostMessageFragment extends Fragment{
     private String urlAvatarString, idString;
     private String tag = "21AugV4";
@@ -28,13 +32,27 @@ public class PostMessageFragment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        getValueFromArgument();
+
+//        Show Avatar
+        showAvatar();
+
+
+    }//Main Method
+
+    private void showAvatar() {
+        CircleImageView circleImageView = getView().findViewById(R.id.circleAvatar);
+        Picasso.get().load(urlAvatarString)
+                .resize(100,100)
+                .into(circleImageView);
+    }
+
+    private void getValueFromArgument() {
         urlAvatarString = getArguments().getString("Avatar");
         idString = getArguments().getString("id");
         Log.d(tag, "Url==>" + urlAvatarString);
         Log.d(tag, "id of Login==>" + idString);
-
-
-    }//Main Method
+    }
 
     @Nullable
 

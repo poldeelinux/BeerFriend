@@ -29,4 +29,5 @@ dependencies {
     implementation files('libs/ftp4j-1.7.2.jar')
     implementation 'com.squareup.okhttp:okhttp:2.0.0'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
