@@ -26,6 +26,12 @@ public class ServiceActivity extends AppCompatActivity {
                             loginStrings[0],
                             loginStrings[5]))
                     .commit();
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.contentFragmentServiceTop,new ListFriendFragment())
+                    .commit();
+
         }
 
 
