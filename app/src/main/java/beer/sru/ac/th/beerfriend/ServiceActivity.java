@@ -21,9 +21,11 @@ public class ServiceActivity extends AppCompatActivity {
 
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.contentFragmentServiceButton, PostMessageFragment.postMessageInstance(loginStrings[4],loginStrings[0]))
+                    .add(R.id.contentFragmentServiceButton, PostMessageFragment.postMessageInstance(
+                            loginStrings[4],
+                            loginStrings[0],
+                            loginStrings[5]))
                     .commit();
-
         }
 
 

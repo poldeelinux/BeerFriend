@@ -22,6 +22,7 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/edtPost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textfield_name"
@@ -30,6 +31,7 @@
                 android:textSize="@dimen/h3" />
 
             <Button
+                android:id="@+id/btnPost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_button"
